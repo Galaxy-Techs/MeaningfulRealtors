@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -207,7 +208,7 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form" netlify method="POST">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Full Name" required>
                         </div>
@@ -308,6 +309,13 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- chatbot script -->
+    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmp2pj3eb000k8pg5z4zpaoap'></zapier-interfaces-chatbot-embed>
+    <!-- AOS script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

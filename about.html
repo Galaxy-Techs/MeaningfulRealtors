@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Meaningfulrealtor</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -91,19 +92,19 @@
                 <h2 class="section-title">Numbers That <span class="text-gold">Speak</span></h2>
             </div>
             <div class="trust-grid">
-                <div class="trust-item">
+                <div class="trust-item" data-aos="fade-up" data-aos-duration="2000">
                     <span class="trust-number">$3M+</span>
                     <span class="trust-label">Portfolio Value Managed</span>
                 </div>
-                <div class="trust-item">
+                <div class="trust-item" data-aos="fade-down" data-aos-duration="2000">
                     <span class="trust-number">40+</span>
                     <span class="trust-label">Years Combined Experience</span>
                 </div>
-                <div class="trust-item">
+                <div class="trust-item" data-aos="fade-up" data-aos-duration="2000">
                     <span class="trust-number">50+</span>
                     <span class="trust-label">Properties Listed</span>
                 </div>
-                <div class="trust-item">
+                <div class="trust-item"  data-aos="fade-down" data-aos-duration="2000">
                     <span class="trust-number">100%</span>
                     <span class="trust-label">Verified Listings</span>
                 </div>
@@ -121,10 +122,10 @@
             </div>
             <div class="founders-grid">
                 <div class="founder-card">
-                    <div class="founder-image">
+                    <div class="founder-image" data-aos="flip-left" data-aos-duration="1000" ata-aos-easing="ease-out-cubic">
                         <img src="./images/segun_sonowo.png" alt="Segun Sonowo">
                     </div>
-                    <div class="founder-content">
+                    <div class="founder-content" data-aos="fade-up" data-aos-duration="300">
                         <h3>Segun Sonowo</h3>
                         <span class="founder-role">Co-Founder & Investment Advisor</span>
                         <p>Segun brings over two decades of frontline experience from the banking and financial services sector into real estate advisory. His core strength sits at the intersection of credit risk, asset evaluation, and structured investment thinking.</p>
@@ -133,10 +134,10 @@
                     </div>
                 </div>
                 <div class="founder-card">
-                    <div class="founder-image">
+                    <div class="founder-image" data-aos="flip-right" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                         <img src="./images/Yetunde_Sonowo.png" alt="Yetunde Sonowo">
                     </div>
-                    <div class="founder-content">
+                    <div class="founder-content" data-aos="fade-up" data-aos-duration="300">
                         <h3>Yetunde Sonowo</h3>
                         <span class="founder-role">Co-Founder & Client Experience Lead</span>
                         <p>With a background shaped by structure, discipline, and client service, she ensures that every engagement moves smoothly from interest to closure and beyond. She pays attention to details others often ignore.</p>
@@ -168,7 +169,7 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form" netlify method="POST">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Full Name" required>
                         </div>
@@ -269,6 +270,13 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- chatbot script -->
+    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmp2pj3eb000k8pg5z4zpaoap'></zapier-interfaces-chatbot-embed>
+    <!-- AOS script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

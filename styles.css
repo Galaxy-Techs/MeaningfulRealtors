@@ -484,6 +484,21 @@ ul {
     background-color: var(--color-gold);
     border-radius: 50%;
     display: inline-block;
+    animation: breathe 2s ease-in-out infinite;
+}
+@keyframes breathe {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.2;
+  }
 }
 
 .hero-title {
@@ -1608,9 +1623,7 @@ ul {
     .stat{
         justify-items: center;
     }
-    .container{
-        /* margin-right: 0%; */
-    }
+    
     .featured-card,
     .about-story-grid,
     .contact-wrapper {

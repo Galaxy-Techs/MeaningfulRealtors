@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meaningfulrealtor - Your Gateway to Premium Property</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="/images/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- ====AOS animation==== -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meaningfulrealtor - Your Gateway to Premium Property</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="/images/logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- ====AOS animation==== -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- ====AOS animation==== -->
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        
+        <!-- Navbar -->
+        <nav class="navbar" id="navbar">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">
+                    <img src="./images/logo.png" alt="" width="80" height="40">
+                    <span class="logo-text">Meaningful<span class="logo-accent">realtors</span></span>
+                </a>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="./images/logo.png" alt="" width="80" height="40">
-                <span class="logo-text">Meaningful<span class="logo-accent">realtors</span></span>
-            </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="listings.html">Listings</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-                </button>
-                <a href="listings.html" class="btn btn-primary nav-cta">View Properties</a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                    </button>
+                    <a href="listings.html" class="btn btn-primary nav-cta">View Properties</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobileMenu">
@@ -58,7 +60,7 @@
         <a href="listings.html" class="btn btn-primary btn-full">View Properties</a>
     </div>
     <div class="mobile-overlay" id="mobileOverlay"></div>
-
+    
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-overlay"></div>
@@ -67,11 +69,11 @@
                 <span class="dot"></span>
                 Trusted Real Estate Partner
             </div>
-            <h1 class="hero-title">
+            <h1 class="hero-title" data-aos="fade-down" data-aos-duration="2000" data-delay="0">
                 Your Gateway to<br>
                 <span class="text-gold">Premium Property</span>
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="2000">
                 Stop searching. Start living. We connect discerning buyers with verified properties that match your lifestyle, budget, and investment goals.
             </p>
             <div class="hero-buttons">
@@ -101,7 +103,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Why Choose Us -->
     <section class="why-choose" id="about">
         <div class="container">
@@ -113,28 +115,28 @@
                 </p>
             </div>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="feature-icon icon-green">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17L4 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
                     <h3>Verified Properties</h3>
                     <p>Every listing undergoes thorough verification including title documentation, ownership status, and legal compliance.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="feature-icon icon-gold">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2V22M2 12H22" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
                     </div>
                     <h3>Flexible Payments</h3>
                     <p>Structured payment plans designed to make premium property accessible. Start with as low as N30M initial deposit.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="feature-icon icon-green">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" stroke="white" stroke-width="2"/><circle cx="12" cy="9" r="2" stroke="white" stroke-width="2"/></svg>
                     </div>
                     <h3>Prime Locations</h3>
                     <p>Strategic positioning in Lagos's fastest-growing corridors ensuring maximum value appreciation and accessibility.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="feature-icon icon-gold">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.92H3C2.45 20.92 2 20.47 2 19.92V16.92C2 16.37 2.45 15.92 3 15.92H21C21.55 15.92 22 16.37 22 16.92Z" stroke="white" stroke-width="2"/><path d="M6 15.92V10.92C6 6.5 9.58 2.92 14 2.92C18.42 2.92 22 6.5 22 10.92" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
                     </div>
@@ -253,7 +255,7 @@
                 </p>
             </div>
             <div class="process-steps">
-                <div class="step">
+                <div class="step" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="2000">
                     <div class="step-number">1</div>
                     <div class="step-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="white" stroke-width="2"/><path d="M20 20L16 16" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
@@ -262,7 +264,7 @@
                     <p>Explore our verified listings and find properties that match your criteria and budget.</p>
                 </div>
                 <div class="step-connector"></div>
-                <div class="step">
+                <div class="step"data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
                     <div class="step-number">2</div>
                     <div class="step-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M1 12S5 4 12 4C19 4 23 12 23 12S19 20 12 20C5 20 1 12 1 12Z" stroke="white" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="white" stroke-width="2"/></svg>
@@ -271,7 +273,7 @@
                     <p>Book a site visit at your convenience. Our team provides guided tours with all the details.</p>
                 </div>
                 <div class="step-connector"></div>
-                <div class="step">
+                <div class="step"data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
                     <div class="step-number">3</div>
                     <div class="step-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 2H6C5.47 2 4.96 2.21 4.59 2.59C4.21 2.96 4 3.47 4 4V20C4 20.53 4.21 21.04 4.59 21.41C4.96 21.79 5.47 22 6 22H18C18.53 22 19.04 21.79 19.41 21.41C19.79 21.04 20 20.53 20 20V8L14 2Z" stroke="white" stroke-width="2"/><path d="M14 2V8H20" stroke="white" stroke-width="2"/><path d="M16 13H8" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M16 17H8" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 9H9H8" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
@@ -280,7 +282,7 @@
                     <p>Make your deposit and sign agreements. We handle all documentation for your peace of mind.</p>
                 </div>
                 <div class="step-connector"></div>
-                <div class="step">
+                <div class="step"data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
                     <div class="step-number">4</div>
                     <div class="step-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 10C21 17 12 22 12 22C12 22 3 17 3 10C3 5.03 7.03 1 12 1C16.97 1 21 5.03 21 10Z" stroke="white" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="white" stroke-width="2"/></svg>
@@ -291,7 +293,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Testimonials Preview -->
     <section class="testimonials-preview">
         <div class="container">
@@ -302,7 +304,7 @@
             </div>
             <div class="testimonials-slider" id="testimonialsSlider">
                 <div class="testimonials-track" id="testimonialsTrack">
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="testimonial-stars">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -319,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="testimonial-stars">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -336,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="testimonial-stars">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -353,7 +355,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="testimonial-stars">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -370,7 +372,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="testimonial-stars">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -387,7 +389,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="testimonial-stars">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -420,7 +422,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -481,7 +483,7 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" action="https://formspree.io/f/mwvyaqgn" method="POST">
+                    <form class="contact-form" netlify action="https://formspree.io/f/mwvyaqgn" method="POST">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Full Name" required>
                         </div>
@@ -581,7 +583,18 @@
         </div>
     </footer>
 
+    <!-- personal script -->
     <script src="script.js"></script>
+    <!-- chatbot script -->
+    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmp2pj3eb000k8pg5z4zpaoap'></zapier-interfaces-chatbot-embed>
+    <!-- AOS script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 0,     // Trigger immediately
+        delay: 0,
+      });
+    </script>
 </body>
 </html>
