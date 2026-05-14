@@ -53,20 +53,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
 
-    // Check for saved theme preference
+    // Check for saved theme preference only
+    // Default is ALWAYS light mode (no system preference check)
     const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+    // Only apply dark mode if user explicitly saved it as dark
+    if (savedTheme === 'dark') {
         html.setAttribute('data-theme', 'dark');
     }
+    // If no saved theme or saved as 'light', stay in default light mode
 
     if (themeToggle) {
         themeToggle.addEventListener('click', function() {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            html.setAttribute('data-theme', newTheme);
+            
+            if (newTheme === 'light') {
+                html.removeAttribute('data-theme');
+            } else {
+                html.setAttribute('data-theme', newTheme);
+            }
             localStorage.setItem('theme', newTheme);
         });
     }
