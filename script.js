@@ -334,6 +334,3 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-
-// AOS animation script
-   
